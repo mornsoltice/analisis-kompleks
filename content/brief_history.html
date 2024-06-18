@@ -234,7 +234,7 @@
                                     <p>
                                         Namun, Bombelli berhasil mengatasi kesulitan ini dengan menyadari bahwa ekspresi aneh (\ref{cubic004}) yang diberikan oleh rumus Cardano untuk \( x \) sebenarnya adalah bilangan real, tetapi diungkapkan dalam cara yang sangat tidak dikenal. Wawasan ini tidak datang dengan mudah. Seperti yang ditulis Bombelli dalam bukunya <em>L'Algebra</em>:
                                     </p>
-                                    <div style="margin-left: 30px;margin-right: 30px;">
+                                    <div>
                                         <p>
                                             Dan meskipun bagi banyak orang ini mungkin terlihat aneh, karena bahkan saya dulu memiliki pendapat ini, karena tampaknya lebih bersifat sofistikasi daripada kebenaran, namun saya mencari keras dan menemukan buktinya, yang akan dicatat di bawah ini. ... Tetapi biarkan pembaca menerapkan semua kekuatan pikirannya, karena [jika tidak] bahkan dia akan merasa tertipu.
                                             [<a href="bombelli" alt="Bombelli" title="Bombelli">1</a>, hal. 293-294;
@@ -266,6 +266,239 @@
                                         </div>
                                             Dan dia menyimpulkan bahwa \( x = 4 \) sebenarnya adalah solusi dari \( x^3=15x+4 \) yang diperoleh dari rumus Cardano [<a href="#bombelli" alt="Bombelli" title="Bombelli">1</a>, hal. 294], lihat Gambar 6. Trik ini hanya berlaku dalam beberapa kasus, namun membantu memahami bilangan imajiner dan mengambil akar kubik mereka atau memanipulasinya ketika muncul bersama bilangan real.
                                         <p></p>
+                                    </div>
+
+                                    <div class="figure-container">
+
+                                        <figure>
+                                            <img src="../images/chp01/bombelli-solution.jpg" alt="Bombelli's solution" title="Bombelli's solution" style="width:100%;">
+                    
+                                            <figcaption>
+                                                Solusi Original Bombelli
+                                            </figcaption>
+                                        </figure>
+                    
+                                        <figure>
+                                            <p>
+                                                \begin{eqnarray*}
+                                                x^3 &amp;=&amp; 15x + 4\\
+                                                [x^3 &amp;=&amp; px + p]
+                                                \end{eqnarray*}
+                                                \begin{eqnarray*}
+                                                (4/2)^2-(15/3)^3 &amp;=&amp; -121\\
+                                                [\left(q/2\right)^2 -\left(p/2\right)^3]&amp;=&amp;-121
+                                                \end{eqnarray*}
+                                                \begin{eqnarray*}
+                                                x &amp;=&amp; \sqrt[3]{2+ \sqrt{-121}} + \sqrt[3]{2- \sqrt{-121}}\\
+                                                x &amp;=&amp; \sqrt[3]{2+ 11\sqrt{-1}} + \sqrt[3]{2- 11\sqrt{-1}} \\
+                                                x &amp;=&amp; 2 + \sqrt{-1} + 2 - \sqrt{-1} = 4
+                                                \end{eqnarray*}
+                    
+                                            </p>
+                                            <figcaption>
+                                                Solusi di aljabar modern.
+                                            </figcaption>
+                                        </figure>
+                                    </div>
+
+                                    <p>
+                                        Tentu saja, seperti yang bisa Anda lihat di Figure 6,
+                                        Bombelli tidak memiliki kekuatan notasi aljabar modern seperti yang kita miliki saat ini
+                                        (atau komputer) dan perhitungannya terbatas pada bilangan dalam "domain nyata".
+                                        Sebenarnya, sebagian besar matematikawan Italia pada saat itu cenderung memikirkan kubus atau kuadrat
+                                        sebagai objek geometris daripada kuantitas aljabar. Namun, ia diakui
+                                        telah membuktikan realitas akar dari persamaan kubik \( x^3 = 15x + 4 \),
+                                        karena ia menunjukkan fakta luar biasa bahwa bilangan real bisa dihasilkan
+                                        oleh bilangan imajiner.
+                                    </p>
+                                    <p>
+                                        Formula Cardano memaksa para matematikawan
+                                        untuk berhadapan dengan akar kuadrat dari bilangan negatif.
+                                        Insiden sejarah ini adalah contoh lain yang meniadakan pandangan umum
+                                        bahwa matematika diciptakan oleh para matematikawan. Seperti sering terjadi, matematika
+                                        sendiri yang berbicara kepada kita.
+                                        Mulai dari waktu ini, bilangan imajiner kehilangan sebagian karakter mistis mereka,
+                                        meskipun penerimaan penuh mereka sebagai angka yang sah terjadi hanya pada abad ke-19.
+                                    </p>
+
+                                    <div class="practice">
+                                        <p><strong>Latihan:</strong> Verifikasi bahwa \( \sqrt[3]{2 \pm \sqrt{-121}} = 2 \pm \sqrt{-1} \).</p>
+                                    </div>
+                                    <hr>
+                                    </div>
+                                    <div id="section4">
+                                    <h2>Pematangan Bilangan Kompleks</h2>
+                                    <p>
+                                        Banyak matematikawan setelah Cardano dan Bombelli memberikan kontribusi penting
+                                        terhadap bilangan imajiner (atau kompleks). Misalnya René Descartes (1596-1650)
+                                        mencetuskan istilah "imaginer" dalam bukunya di <em>La Géométrie</em> tahun 1637 sebagai berikut:
+                                    </p>
+                                    <div style="margin-left: 30px;margin-right: 30px;">
+                                        <p>Tidak ada akar yang benar atau salah [negatif] yang selalu nyata; tetapi kadang-kadang
+                                            hanya imajiner. [<a href="#descartes" alt="Descartes" title="Descartes">4</a>, hlm. 380]
+                                        </p>
+                                    </div>
+                                    <p>
+                                        John Wallis (1616-1703) menunjukkan bagaimana cara merepresentasikan akar kompleks
+                                        dari persamaan kuadratik dengan koefisien nyata
+                                        [<a href="#kline" alt="Kline" title="Kline">8</a>, hlm. 594].
+                                        Caspar Wessel (1745-1818) dan
+                                        Jean-Robert Argan (1768-1822)
+                                        memberikan representasi geometris dari bilangan kompleks sebagai vektor
+                                        [<a href="#gonzalez-velasco" alt="González-Velasco" title="González-Velasco">7</a>, hlm. 185-190].
+                                    </p>
+                                    <figure>
+                                        <img src="https://upload.wikimedia.org/wikipedia/commons/d/d7/Leonhard_Euler.jpg" alt="Euler" title="Euler" style="width:30%;">
+                                        <figcaption>
+                                            Euler.
+                                        </figcaption>
+                                    </figure>
+                                    <p>
+                                        Leonard Euler (1707-1783) menstandarisasi notasi "\( i = \sqrt{-1} \)"
+                                        [<a href="#euleri">6</a>, hlm. 184] dan menggunakan bilangan imajiner untuk menyelesaikan
+                                        persamaan kuadratik dan kubik, meskipun pada saat itu
+                                        dia masih curiga terhadap bilangan ini.
+                                        Di dalam <em>Algebra</em>-nya, sebagai contoh, dia menyebutkan:
+                                    </p>
+                                    <div style="margin-left: 30px;margin-right: 30px;">
+                                        <p>[...] karena semua bilangan yang mungkin dipikirkan
+                                            baik lebih besar atau lebih kecil dari 0, atau 0 itu sendiri, sudah jelas
+                                            bahwa kita tidak dapat menempatkan akar kuadrat dari
+                                            bilangan negatif di antara bilangan yang mungkin, dan oleh karena itu kita
+                                            harus mengatakan bahwa itu adalah kuantitas yang tidak mungkin. Dengan cara ini kita
+                                            dibawa ke gagasan tentang bilangan, yang dari sifatnya tidak mungkin;
+                                            dan oleh karena itu mereka biasanya disebut bilangan imajiner,
+                                            karena mereka hanya ada dalam imajinasi.
+                                            [<a href="#euler-algebra" alt="Euler-Algebra" title="Euler-Algebra">5</a>, hlm. 43]
+                                        </p>
+                                    </div>
+                                    <p>
+                                        Lest seseorang menganggap ini sebagai penghukuman, dia melanjutkan:
+                                    </p>
+                                    <div style="margin-left: 30px;margin-right: 30px;">
+                                        <p>meskipun demikian, bilangan-bilangan ini hadir
+                                            dalam pikiran kita; mereka ada dalam imajinasi kita, dan kita masih memiliki gagasan yang cukup tentang
+                                            mereka; [...] tidak ada yang mencegah kita untuk menggunakan
+                                            bilangan-bilangan imajiner ini, dan menggunakannya dalam perhitungan.
+                                            [<a href="#euler-algebra" alt="Euler" title="Euler">5</a>, hlm. 43]
+                                        </p>
+                                    </div>
+                                    <p>
+                                        Kemudian Carl Friedrich Gauss (1777-1855) memperkenalkan istilah "bilangan kompleks"
+                                        merujuk kepada bilangan dalam bentuk \( a + bi \)
+                                        [<a href="#gonzalez-velasco" alt="González-Velasco" title="González-Velasco">7</a>, hlm. 191].
+                                        Dia juga memberikan empat bukti dari <em>teorema dasar aljabar</em> sepanjang
+                                        karir panjangnya. Teorema ini memberi tahu kita bahwa
+                                        setiap polinomial berderajat \( n \) memiliki \( n \) akar, beberapa atau semua
+                                        mungkin bersifat imajiner. Bukti pertama yang diberikan Gauss adalah dalam disertasinya
+                                        doktoral tahun 1799. Yang terakhir (dan mungkin yang paling elegan)
+                                        memungkinkan penggunaan bilangan kompleks tidak hanya untuk variabel tetapi
+                                        juga untuk koefisien. Karena ini secara mutlak bergantung pada pengakuan
+                                        bilangan kompleks, Gauss membantu memperkokoh posisi bilangan ini
+                                        [<a href="#kline" alt="Kline" title="Kline">8</a>, Jil. 2, hlm. 595].
+                                    </p>
+                                    <p>
+                                        Definisi pertama yang ketat dari bilangan kompleks diberikan
+                                        oleh William Rowan Hamilton (1805-1865). Pada tahun 1833, ia mengusulkan kepada Akademi Irlandia
+                                        bahwa sebuah bilangan kompleks \( a + ib \) dapat dianggap sebagai <em>pasangan</em> \( (a, b) \),
+                                        dengan \( a, b \) bilangan real
+                                        [<a href="#gonzalez-velasco" alt="González-Velasco" title="González-Velasco">7</a>, hlm. 192-193].
+                                        Kemudian ia mendefinisikan penambahan dan perkalian
+                                        dari <em>pasangan</em> sebagai berikut:
+                                    </p><div class="scroll-wrapper">
+                                        \[(a, b) + (c, d) = (a + c, b + d)\] 
+                                    </div>
+                                    <div style="text-align: center;">
+                                        dan
+                                    </div>
+                                    <div class="scroll-wrapper">
+                                        \[(a, b)(c, d) = (ac - bd, bc + ad).\]
+                                    </div>
+                                    <p></p>
+                                    <hr>
+
+                                    <div id="section6">
+
+                                        <h2>References</h2>
+                        
+                                        <ol class="bbtex-list">
+                                            <li id="bombelli">Bombelli, R. (1579). <em>L'Algebra.</em> Bologna. <a href="http://mathematica.sns.it/opere/9/" target="_blank"><i class="fas fa-external-link-alt"></i></a></li>
+                        
+                                            <li id="cardano">Cardano,&nbsp;H.&nbsp;(1545).&nbsp;<em>Artis magnae, sive de regulis algebraicis, liber
+                                                    unus.</em>&nbsp;(n.p.):&nbsp;Joh.
+                                                Petreius.
+                                                <a href="https://www.google.com.au/books/edition/Artis_magnae_sive_de_regulis_algebraicis/-k5ZAAAAcAAJ?hl=en&amp;gbpv=1&amp;pg=PA66&amp;printsec=frontcover&amp;bsq=cuius%20hoc%20extremum%20ut%20dixi%2C%20adeo%20est%20subtile%2C%20ut%20sit%20inutile" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+                                            </li>
+                                            <li id="carrucio">Carrucio, E. (2009). <em>Mathematics and Logic in History and Contemporary
+                                                    Thought</em>.
+                                                (I. Quigly, Trans.) USA: Aldine Transaction. (Original work published 1964).</li>
+                                            <li id="descartes">Descartes, R. (1637). <em>La Géométrie.</em> Paris: A. Herman, Librairie
+                                                Scientifique. <a href="https://archive.org/details/geometryofrene00desc/page/174/mode/2up?q=imaginary" target="_blank"><i class="fas fa-external-link-alt"></i></a></li>
+                                            <li id="euler-algebra">Euler, L. (1972). <em>Elements of Algebra.</em> (Rev. John Hewlett, B.D.
+                                                F.A.S. &amp;c,
+                                                Trans.). Springer-Verlag.
+                                                (Original work published 1770). <a href="https://www.springer.com/gp/book/9781461385134" target="_blank"><i class="fas fa-external-link-alt"></i></a></li>
+                                            <li id="euleri">Euleri, L. (1845). <em>Instituitionum Calculi Integralis.</em> Volumen Quartum.
+                                                Petropoli. Impensis Academia Imperialis Scientarum. <a href="https://books.google.it/books?id=rCNRAAAAYAAJ&amp;pg=PA184#v=onepage&amp;q&amp;f=false" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+                                            </li>
+                                            <li id="gonzalez-velasco">González-Velasco, A. E. (2011) <em>Journey through Mathematics.</em>
+                                                Springer Science+Business Media. <a href="https://www.springer.com/gp/book/9780387921532" target="_blank"><i class="fas fa-external-link-alt"></i></a></li>
+                                            <li id="kline">Kline, M. (1972). <em>Mathematical Thought from Ancient to Modern Times.</em> Vols.
+                                                1-3. New York:
+                                                Oxford University Press.</li>
+                                            <li id="merzbach-boyer">Merzbach, U. C &amp; Boyer, C. B. (2011). <em>A history of mathematics.</em> 3rd
+                                                ed.
+                                                John Wiley &amp; Sons, Inc., Hoboken, New Jersey.</li>
+                                            <li id="oconnor-robertson">O'Connor, J. J. &amp; Robertson, E. F. (2000). <em>Rafael Bombelli.</em>
+                                                <a href="https://mathshistory.st-andrews.ac.uk/Biographies/Bombelli/" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+                                            </li>
+                                        </ol>
+                        
+                                        <p class="w3-center" style="font-size:24px">
+                                            <strong>Further reading</strong>
+                                        </p>
+                        
+                                        <ul style="line-height:28px">
+                                            <li id="bagni">Bagni, G. T. (2009). Bombelli's Algebra (1572) and a New Mathematical Object.
+                                                <em>For the Learning of Mathematics.</em> Vol. 29, No. 2, pp.
+                                                29-31.
+                                                <a href="https://www.jstor.org/stable/40248647" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+                                            </li>
+                                            <li id="buehler">Buehler, D. (2014). Incomplete understanding of complex numbers
+                                                Girolamo Cardano: a case study in the acquisition
+                                                of mathematical concepts. <em>Synthese </em> 191:4231-4252.
+                                                <a href="https://link.springer.com/article/10.1007/s11229-014-0527-x" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+                                            </li>
+                                            <li id="burton">Burton, D. M. (1995). <em>The history of mathematics: An introduction</em> (6th ed.)
+                                                (2005). New York: McGraw-Hill.</li>
+                        
+                                            <li>Gindikin, S. (2007). <em>Tales of Mathematicians and Physicists</em>. Second English edition
+                                                Springer Science+
+                                                Business Media, LLC.
+                                                <a href="https://link.springer.com/book/10.1007/978-0-387-48811-0" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+                                            </li>
+                                            <li id="nahim">Nahim, P. J. (1998). <em>An imaginary tale: The story of $\sqrt{-1}$</em>. USA:
+                                                Princeton
+                                                University Press.
+                                            </li>
+                                            <li id="huffman">Huffman, C. J. (2019). Mathematical Treasure: Raphael Bombelli's L'algebra.
+                                                <em>Convergence.</em>
+                                                <a href="https://www.maa.org/press/periodicals/convergence/mathematical-treasure-raphael-bombellis-lalgebra" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+                                            </li>
+                                            <li id="marsden-tromba">Marsden, J. E. &amp; Tromba, A. J. (2003). <em>Vector Calculus.</em> USA: W. H.
+                                                Freeman and
+                                                Company.</li>
+                                            <li id="merino">Merino, O. (2006). <em>A Short History of Complex Numbers.</em>
+                                                <a href="http://www.math.uri.edu/~merino/spring06/mth562/ShortHistoryComplexNumbers2006.pdf" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+                                            </li>
+                                            <li id="stillwell">Stillwell, J. (2010). <em>Mathematics and Its History.</em> Springer Science.
+                        
+                                                <a href="https://www.springer.com/gp/book/9781441960528" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+                                            </li>
+                        
+                                        </ul>
+                                        <hr>
+                        
                                     </div>
                             </div>
                     </div>
@@ -300,6 +533,18 @@
             ggbApplet02.inject('ggb-element-02');
         });
     </script>
+    <strong>
+        <span class="hide-small" style="font-size: 0.9em;">&copy; K M Nandyka
+            <script>
+                var today = new Date();
+                var year = today.getFullYear();
+                var month = String(today.getMonth() + 1).padStart(2, '0'); // Dapatkan bulan (ditambah 1 karena Januari dimulai dari 0)
+                var day = String(today.getDate()).padStart(2, '0'); // Dapatkan tanggal
+                document.write(day + '-' + month + '-' + year);
+            </script>
+        </span>
+
+    </strong>
 
         </section>
     </div>
