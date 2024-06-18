@@ -151,6 +151,123 @@
                         <p>
                             Seperti yang dapat Anda amati, tidak peduli bagaimana garis yang didefinisikan oleh parameter \( p \) dan \( q \), itu akan selalu memotong kubik di suatu tempat, bahkan ketika garis \( px+q \) tegak lurus dengan sumbu \( x \) dan jauh dari titik asal (misalnya ketika \( p \) dan \( q \) keduanya adalah bilangan positif/negatif yang sangat besar). Ini karena kubik menjangkau seluruh rentang dari \( -\infty \) hingga \( +\infty \). Jadi, tidak ada garis yang bisa Anda gambar yang tidak akan memotong kubik ini. Contoh ini sangat berbeda dari kasus kuadrat yang berupa parabola \( x^2 \) di mana Anda bisa mendefinisikan garis \( mx + n \) sedemikian rupa sehingga tidak akan memotong parabola.
                         </p>
+
+                        <hr>
+
+                    </div>
+
+                    <div id="section2">
+                        <h2>Solusi Ke Persamaan Kubik</h2>
+
+                        <p>
+                            Diketahui bahwa solusi dari kubik \( x^3 = px + q \) dikembangkan pada masa Renaisans (abad ke-15 dan ke-16) oleh matematikawan Italia. Scipione del Ferro (1465-1526) dan Niccolò Tartaglia (1500-1557), diikuti oleh Girolamo Cardano (1501-1576), menunjukkan bahwa \( x^3 = px + q \) memiliki solusi yang diberikan oleh
+                            </p>
+                            <div class="scroll-wrapper">
+                                \begin{eqnarray}\tag{5}\label{cubic002}
+                                x = \sqrt[3]{\frac{q}{2} + \sqrt{\frac{q^2}{4} - \frac{p^3}{27}}} -
+                                \sqrt[3]{- \frac{q}{2} + \sqrt{\frac{q^2}{4} - \frac{p^3}{27}}}
+                                \end{eqnarray}
+                            </div>
+                            Ini dikenal sebagai rumus Cardano dan di sini kita menggunakan notasi modern.
+                            
+                            <p></p>
+                            <div class="figure-container">
+                                <figure>
+                                    <img src="../images/chp01/tartaglia.jpg" alt="Niccolò Fontana Tartaglia" title="Niccolò Fontana Tartaglia" style="width:220px;">
+                                    <figcaption>
+                                        Tartaglia.
+                                    </figcaption>
+                                </figure>
+                            <figure>
+                                <img src="../images/chp01/cardano.jpg" alt="Gerolamo Cardano" title="Gerolamo Cardano" style="width:250px;">
+                                <figcaption>
+                                    Cardano.
+                                </figcaption>
+                            </figure>
+                            </div>
+                            <p>
+                                Untuk melihat bagaimana ini bekerja, pertimbangkan persamaan \( x^3 = -6 x + 20 \). Dalam hal ini \( p = -6 \) dan \( q = 20 \). Jika kita masukkan angka-angka ini ke dalam (\ref{cubic002}), kita memperoleh solusi
+                            </p>
+                            <div class="scroll-wrapper">
+                                \( x = \sqrt[3]{10 + \sqrt{108}} - \sqrt[3]{- 10 + \sqrt{108}}. \)
+                            </div>
+                                Menyederhanakan, kita memperoleh \( x = 2 \), sebuah solusi dari persamaan yang diberikan karena
+                            <div class="scroll-wrapper">
+                                \( 8 = (2)^3 = -6(2) + 20 = -12 + 20 = 8. \)
+                            </div>
+                            Jadi, rumus ini tampaknya bekerja dengan sangat baik, setidaknya untuk kasus ini.
+                            
+                            <p></p>
+                            <div class="practice">
+                                <p><strong>Latihan:</strong> Cobalah menyelesaikan \( x^3 = 6x + 6 \) & \( x^3 = 3x + 1\) menggunakan rumus Cardano.</p>
+                            </div>
+                            <hr>
+
+                            <div id="section3">
+                                <h2>Asal-usul Bilangan Imajiner</h2>
+                                <p>
+                                    Beberapa tahun setelah penemuan rumus Cardano, insinyur dan arsitek Italia Rafael Bombelli (1526-1572) menyadari ada sesuatu yang aneh dan paradoks tentang rumus ini. Dia mempertimbangkan persamaan
+                                    \begin{eqnarray}\label{cubic003}
+                                    x^3= 15 x+ 4
+                                    \end{eqnarray}
+                                    dan, dengan sedikit pemikiran, Anda dapat melihat bahwa \( x = 4 \) adalah solusinya. Ini juga dapat dilihat pada Gambar 4. Sebenarnya, ada tiga solusi, tetapi Bombelli tidak mempertimbangkan nilai negatif, jadi kita juga tidak akan memperhitungkannya.
+                                </p>
+                                <figure>
+                                    <img src="../images/chp01/cubic-line.svg" alt="x^3=15x+4" title="x^3=15x+4" style="width:70%;">
+                                    <figcaption>
+                                        \( x^3=15x+4 \).
+                                    </figcaption>
+                                </figure>
+                                <div class="w3-responsive">
+                                    <p>
+                                        Kemudian Bombelli menggunakan rumus Cardano untuk menyelesaikan \( x^3= 15 x+ 4 \).
+                                        Dengan demikian, dengan mempertimbangkan \( p = 15 \) dan \( q=4 \), ia mendapatkan
+                                    </p>
+                                    <div class="scroll-wrapper">
+                                        \begin{eqnarray}\tag{8}\label{cubic004}
+                                        x = \displaystyle \sqrt[3]{2 + \sqrt{-121}} + \sqrt[3]{2 - \sqrt{-121}}.
+                                        \end{eqnarray}
+                                    </div>
+                                    Di sini dia menemui nilai yang sangat tidak biasa. Jika rumus Cardano benar, angka ini harus sama dengan 4. Namun ini mustahil dan angka tersebut tidak bisa menjadi bilangan real karena di dalam akar kubik kita mengambil akar dari bilangan negatif, yang merupakan kejanggalan mutlak pada masa itu (dan juga sekarang). Cardano juga mengalami kesulitan ini tetapi dia tidak menghadapinya secara langsung. Dia pernah menyebut bilangan imajiner, tetapi dalam hubungannya dengan persamaan kuadrat dan disertai komentar bahwa bilangan ini "sehalus yang mereka sia-siakan" [<a href="#cardano" alt="Cardano" title="Cardano">2</a>].
+                                    <p></p>
+
+                                    <p>
+                                        Namun, Bombelli berhasil mengatasi kesulitan ini dengan menyadari bahwa ekspresi aneh (\ref{cubic004}) yang diberikan oleh rumus Cardano untuk \( x \) sebenarnya adalah bilangan real, tetapi diungkapkan dalam cara yang sangat tidak dikenal. Wawasan ini tidak datang dengan mudah. Seperti yang ditulis Bombelli dalam bukunya <em>L'Algebra</em>:
+                                    </p>
+                                    <div style="margin-left: 30px;margin-right: 30px;">
+                                        <p>
+                                            Dan meskipun bagi banyak orang ini mungkin terlihat aneh, karena bahkan saya dulu memiliki pendapat ini, karena tampaknya lebih bersifat sofistikasi daripada kebenaran, namun saya mencari keras dan menemukan buktinya, yang akan dicatat di bawah ini. ... Tetapi biarkan pembaca menerapkan semua kekuatan pikirannya, karena [jika tidak] bahkan dia akan merasa tertipu.
+                                            [<a href="bombelli" alt="Bombelli" title="Bombelli">1</a>, hal. 293-294;
+                                            <a href="#oconnor-robertson" alt="O'Connor-Robertson" title="O'Connor-Robertson">10</a>]
+                                        </p>
+                                    </div>
+                                    <figure>
+                                        <img src="../images/chp01/algebra-bombelli.jpg" alt="L'Algebra" title="L'Algebra" style="width:45%;">
+                                        <figcaption>
+                                            <em>L'Algebra</em> karya Rafael Bombelli: muka buku edisi Bologna tahun 1579.
+                                        </figcaption>
+                                    </figure>
+                                    <p></p>
+                                    <div>
+                                        <p>
+                                            Insight besar Bombelli adalah memperlakukan \( \sqrt{-1} \) sebagai sebuah bilangan dan melakukan operasi dengannya mengikuti beberapa aturan aritmetika tertentu (jenis aturan yang sama yang kita gunakan sekarang). Dengan demikian, dia menemukan bahwa
+                                        </p>
+                                        <div class="scroll-wrapper">
+                                            $$\sqrt[3]{2+ \sqrt{-121}} = 2 + \sqrt{-1} \quad \text{dan} \quad \sqrt[3]{2- \sqrt{-121}} = 2 - \sqrt{-1} .$$
+                                        </div>
+                                                Dengan mengganti nilai-nilai ini dalam (\ref{cubic004}), Bombelli mendapatkan
+                                        <div class="scroll-wrapper">
+                                            $$x = 2 + \sqrt{-1} + 2 - \sqrt{-1}.$$
+                                        </div>
+                                            Lalu dia menunjukkan bahwa akar kuadrat dari bilangan negatif saling membatalkan satu sama lain [<a href="#bombelli" alt="Bombelli" title="Bombelli">1</a>, hal. 169;
+                                        <a href="#gonzalez-velasco" alt="González-velasco" title="González-Velasco">7</a>, hal. 164]. Yakni
+                                        <div class="scroll-wrapper">
+                                            $$x = 2 + \cancel{\sqrt{-1}} + 2 - \cancel{\sqrt{-1}}.$$
+                                        </div>
+                                            Dan dia menyimpulkan bahwa \( x = 4 \) sebenarnya adalah solusi dari \( x^3=15x+4 \) yang diperoleh dari rumus Cardano [<a href="#bombelli" alt="Bombelli" title="Bombelli">1</a>, hal. 294], lihat Gambar 6. Trik ini hanya berlaku dalam beberapa kasus, namun membantu memahami bilangan imajiner dan mengambil akar kubik mereka atau memanipulasinya ketika muncul bersama bilangan real.
+                                        <p></p>
+                                    </div>
+                            </div>
                     </div>
                 </article>
             </main>
