@@ -1,3 +1,18 @@
 .center-text {
     text-align: center;
 }
+
+.logo-container {
+    display: flex;
+    align-items: center; /* Pusatkan vertikal */
+    padding: 0 15px;
+}
+
+.logo-container img {
+    width: 50px; /* Sesuaikan ukuran gambar di sini */
+    margin-right: 10px; /* Jarak antara gambar dan teks */
+}
+
+.logo-container strong {
+    margin-right: 10px; /* Jarak antara teks dan gambar */
+}
