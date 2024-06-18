@@ -1,0 +1,165 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title> Table of Contents</title>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" href="../assets/icon.png" sizes="32x32">
+
+  <link rel="stylesheet" href="../styles/style.css">
+
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-HVPF4FLZCB"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-HVPF4FLZCB');
+  </script>
+</head>
+
+<body data-type="book" id="top" class="latex-dark">
+    <div class="fixed-bar" id="fixed-bar">
+        <div class="link-container">
+            <a href="table_of_contents.html" class="link" id="prev-link">
+                <span class="arrow"><i class="fa-solid fa-arrow-left"></i></span>
+            </a>
+        </div>
+        <div class="link">
+            <a href="brief_history.html" class="link" id="center-link">
+                <span class="content-hover-previous">Complex Analysis
+                    </span>
+                <span class="content-hover">Table of Contents</span>
+                <span class="content-original">Complex Analysis</span>
+                <span class="content-hover-next">License</span>
+            </a>
+        </div>
+        <a href="terminology_notation.html" class="link" id="next-link">
+            <span class="arrow"><i class="fa-solid fa-arrow-right"></i></span>
+        </a>
+    </div>
+
+    <!--Main Div-->
+    <div class="container">
+        <section data-type="chapter" id="brief_history">
+            <br><br>
+
+            <main>
+                <article>
+                    <h1>Sejarah Singkat</h1>
+
+                    <div id="section1">
+                        <hr>
+                        <h2>Interpretasi Geometri Dari Persamaan Kuadrat & Persamaan Kubik</h2>
+                        <p>Pertimbangkan sebuah persamaan kuadrat
+                            \begin{eqnarray}
+                                x^2 = mx + n \tag{1} \label{quad001}
+                            \end{eqnarray}
+                            di sekolah kemungkinan smp kita telah belajar cara mencari solusi, untuk mencari
+                            semua nilai dari \(x\) yang memenuhi (\ref{quad001}). Untuk melakukan itu 
+                            kita hanya perlu menggunakan rumus yang dikenal sebagai
+                            <em>persamaan kuadrat</em>
+                        </p>
+                        <div class="scroll-wrapper">
+                            \begin{eqnarray}
+                                x = \frac{-b\pm \sqrt{b^2-4ac}}{2a} \tag{2} \label{quad002}
+                            \end{eqnarray}
+                        </div>
+                        dari <em>rumus persamaan kuadrat</em>
+                        \begin{eqnarray}
+                            ax^2+ bx+c = 0. \tag{3} \label{quad003}
+                        \end{eqnarray}
+                        dengan menulis ulang (\ref{quad001}) sebagai \(x^2-mx-n = 0\), kita dapat menggunakan
+                        (\ref{quad002}) untuk mendapatkan hasil
+
+                        <div class="scroll-wrapper">
+                            \begin{eqnarray}\tag{4} \label{quad004}
+                                x = \frac{ m \pm \sqrt{m^2 + 4n } }{2} = \frac{m}{2} \pm \sqrt{\frac{m^2}{4} + n}
+                            \end{eqnarray}
+                        </div>
+
+                        <p>
+                            Jika kita plot persamaan (\ref{quad001}) kita bisa lihat bahwa secara geometri
+                            bahwa itu merepresentasikan titik pertemuan dari parabola \(y=x^2\) dengan garis 
+                            putih \(y = mx+n\). Anda bisa mengotak atik dengan memainkan applet berikut dan
+                            perhatikan apa a yang terjadi di titik \(x_0\) dan \(x_1\).
+
+                        </p>
+                        <div>
+                            <div style="display:block;" class="ggbElement" id="ggb-element-01"></div>
+                        </div>
+                        <p>
+                            Seperti yang kalian tahu kita punya 3 kasus:
+                        </p><ol>
+                            <li>Ada 2 titik pertemuan, i. e. two solutions.</li>
+                            <li>Hanya ada 1 titik pertemuan, i. e. one solution.</li>
+                            <li>Tidak ada titik pertemuan, i. e. there are no solutions.</li>
+                        </ol>
+
+                        <p>
+                            Yang mengejutkan adalah ini sudah diketahui sejak zaman kuno,
+                            bahkan tanpa penggunaan simbol matematika atau komputer. Kita tahu
+                            tablet tanah liat ada di tahun sekitar 2000 SM bahwa peradaban 
+                            babilonia memiliki rumus kuadrat, yang memungkinkan mereka (dalam bentuk lisan)
+                            untuk menyelesaikan persamaan kuadrat. Karena konsep bilangan negatif baru muncul
+                            di abad ke 16, orang babilonia tidak mempunyai solusi negatif. Kita juga bisa mencari persamaan ini secara implisit di geometri yang 
+                            ditemukan oleh para matematikawan yunani. seperti yang kita harapkan 
+                            ketika lingkaran, parabola, dan sejenisnya sedang diselidiki, tetapi
+                             kita tidak menuntut bahwa setiap masalah geometris memiliki solusi.
+                        </p>
+                        
+                        <p>
+                            Sekarang, mari kita kembali ke persamaan kuadrat \(x^2 = mx+n\).
+                            Pertimbangkan nilai dari \(m = 0\) dan \(n=-1\).
+                            Jika kita menggunakan rumus (\ref{quad004}), kita dapati bahwa 
+                            $$x = \pm\sqrt{-1}.$$
+                            Apa yang terjadi disini cukup menarik, karena kita belajar kalkulus atau
+                            sekolah biasa bahwa kita tidak bisa mencari akar dari sebuah bilangan negatif.
+                            Lalu bagaimana cara kita mengintrepretasikan nilai ini? 
+                        </p>
+                    </div>
+                </article>
+            </main>
+            <script src="https://www.geogebra.org/apps/deployggb.js"></script>
+    <script>
+        let params01 = {
+            "width": 696,
+            "height": 436,
+            "material_id": "mqdbedcd",
+            "borderColor": "888888",
+            "playButton": true,
+            "showFullscreenButton": true,
+            "enableShiftDragZoom": true,
+            "showResetIcon": true
+        };
+        let params02 = {
+            "width": 670,
+            "height": 430,
+            "material_id": "ntehbavr",
+            "borderColor": "888888",
+            "playButton": true,
+            "showFullscreenButton": true,
+            "enableShiftDragZoom": true,
+            "showResetIcon": true
+        };
+        let ggbApplet01 = new GGBApplet(params01, true);
+        let ggbApplet02 = new GGBApplet(params02, true);
+        window.addEventListener("load", () => {
+            ggbApplet01.inject('ggb-element-01');
+            ggbApplet02.inject('ggb-element-02');
+        });
+    </script>
+
+        </section>
+    </div>
+        </footer>
+        <script src="js/mathjax.js"></script>
+        <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+        <script src="js/scripts.js"></script>
+        <script async src="js/prism.js"></script>
+</body>
